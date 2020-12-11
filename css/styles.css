@@ -77,3 +77,6 @@ h6 {
     margin-top: 0;
     font-weight: bolder;
 }
+.page-footer{
+    background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(72, 15, 144, 0.4) 100%);
+}
