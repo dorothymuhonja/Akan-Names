@@ -8,50 +8,143 @@
     <!-- Google Fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
     <!-- Bootstrap core CSS -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
     <!-- Material Design Bootstrap -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.18.0/css/mdb.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css">
     <title>Akan Names</title>
 </head>
 <body>
- <div class="container">
-     <h1>Akan Names</h1>
-      <p>The Akan are a meta-ethnicity living in the southern regions of present-day Ghana and Ivory Coast in West
-    Africa.The Akan people of Ghana frequently name their children after the day of the week they were born and the order in which
-    they were born. These "day names" have further meanings concerning the soul and character of the person.  More info on Akan names <a href="https://en.wikipedia.org/wiki/Akan_names" target="_blank">here.</a></p>
-
-    <p>This application takes in the date your were born and tells you your Akan name depending on your gender.</p>
-
-      <div class="forms">
-       <p>Fill the form below to know your Akan name.</p>
-        <h5>Gender</h5>
-        <!-- Group of default radios - option 1 -->
-        <div class="custom-control custom-radio">
-            <input type="radio" class="custom-control-input" id="defaultGroupExample1" name="groupOfDefaultRadios">
-            <label class="custom-control-label" for="defaultGroupExample1">Male</label>
-        </div>
+   
+    <header>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <strong>AKAN</strong>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-7"
+                    aria-controls="navbarSupportedContent-7" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent-7">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home
+                                <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Name Checker</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact Us</a>
+                        </li>
+                    </ul>
         
-        <!-- Group of default radios - option 2 -->
-        <div class="custom-control custom-radio">
-            <input type="radio" class="custom-control-input" id="defaultGroupExample2" name="groupOfDefaultRadios" checked>
-            <label class="custom-control-label" for="defaultGroupExample2">Female</label>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <!-- Navbar -->
+        <!-- Full Page Intro -->
+        <div class="view"
+            style="background-image: url('https://buzzghana.com/wp-content/uploads/2013/10/Akan-people.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center center;">
+            <!-- Mask & flexbox options-->
+            <div class="mask rgba-gradient align-items-center">
+                <!-- Content -->
+                <div class="container">
+                    <!--Grid row-->
+                    <div class="row mt-5">
+                        <!--Grid column-->
+                        <div class="col-md-6 mb-5 mt-md-0 mt-5 white-text text-center text-md-left">
+                            <h1 class="h1-responsive font-weight-bold wow fadeInLeft" data-wow-delay="0.3s">Akan Names</h1>
+                            <hr class="hr-light wow fadeInLeft" data-wow-delay="0.3s">
+                            <h6 class="mb-3 wow fadeInLeft" data-wow-delay="0.3s">The Akan are a meta-ethnicity living in the southern regions of present-day Ghana and Ivory Coast in West
+                            Africa.The Akan people of Ghana frequently name their children after the day of the week they were born and the order in
+                            which they were born. These "day names" have further meanings concerning the soul and character of the person.
+                         <br>
+                         This app takes in your birth day and tells you your Akan name depending on your gender.
+                        </h6>
+                            <button id="btn" class="btn btn-outline-white wow fadeInLeft" data-wow-delay="0.3s"><a href="https://en.wikipedia.org/wiki/Akan_names" target="_blank">Learn more</a></button>
+                        </div>
+                        <!--Grid column-->
+                        <!--Grid column-->
+                        <div class="col-md-6 col-xl-5 mb-4">s
+                            <!--Form-->
+                            <div class="card wow fadeInRight" data-wow-delay="0.3s">
+                                <div class="card-body">
+                                    <!--Header-->
+                                    <div class="text-center">
+                                        <h3 class="white-text">
+                                            <i class="fas fa-user white-text"></i> Learn your name</h3>
+                                        <hr class="hr-light">
+                                    </div>
+                                        <div class="forms">
+                                            <p>Fill the form below to know your Akan name.</p>
+                                            <div id="gender">
+                                                <h5>Gender</h5>
+                                                <!-- Group of default radios - option 1 -->
+                                                <div class="custom-control custom-radio">
+                                                    <input type="radio" class="custom-control-input" id="defaultGroupExample1" name="groupOfDefaultRadios">
+                                                    <label class="custom-control-label" for="defaultGroupExample1">Male</label>
+                                                </div>
+                                        
+                                                <!-- Group of default radios - option 2 -->
+                                                <div class="custom-control custom-radio">
+                                                    <input type="radio" class="custom-control-input" id="defaultGroupExample2" name="groupOfDefaultRadios"
+                                                        checked>
+                                                    <label class="custom-control-label" for="defaultGroupExample2">Female</label>
+                                                </div>
+                                            </div>
+                                            <label for="date">dd</label>
+                                            <input type="number" id="date" name="date" min="01" max="31">
+                                            <label for="month">mm</label>
+                                            <input type="number" id="month" name="month" min="01" max="12">
+                                            <label for="year">yyyy</label>
+                                            <input type="number" id="year" name="year" min="1900" max="2020">
+                                            <br>
+                                            <br>
+                                            <button type="button" class="btn btn-primary">Submit</button>
+                                            <button type="button" class="btn btn-danger">Clear</button>
+                                        
+                                            <p>Your Akan name is:</p>
+                                        </div>
+                                        <hr class="hr-light mb-3 mt-4">
+                                        <div class="inline-ul text-center">
+                                            <a class="p-2 m-2 tw-ic">
+                                                <i class="fab fa-twitter white-text"></i>
+                                            </a>
+                                            <a class="p-2 m-2 li-ic">
+                                                <i class="fab fa-linkedin-in white-text"> </i>
+                                            </a>
+                                            <a class="p-2 m-2 ins-ic">
+                                                <i class="fas fa-instagram white-text"> </i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/.Form-->
+                        </div>
+                        <!--Grid column-->
+                    </div>
+                    <!--Grid row-->
+                </div>
+                <!-- Content -->
+            </div>
+            <!-- Mask & flexbox options-->
         </div>
-        <label for="date">dd</label>
-        <input type="number" id="date" name="date" min="01" max="31">
-        <label for="month">mm</label>
-        <input type="number" id="month" name="month" min="01" max="12">
-        <label for="year">yyyy</label>
-        <input type="number" id="year" name="year" min="1900" max="2020">
-        <br>
-        <button type="submit" value="Submit">Submit</button>
-        <button type="reset" value="Reset">Clear</button>
-        <p>Your Akan name is: </p>
-        
-    </div>
+        <!-- Full Page Intro -->
+    </header>
+    <!-- Main navigation -->
+    <!--Main Layout-->
+    <main>
+  <script>
+      Animations; init
+        new WOW().init();
+  </script>
 
-    </div>
-
-    <script src="./js/scripts.js"></script>
 </body>
 </html>
