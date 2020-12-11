@@ -69,10 +69,16 @@ h6 {
 }
 
 body{
- /* background-color: blue; */
+ 
  background-image:linear-gradient( rgba(0, 0, 0, 0.7), rgba(72, 15, 144, 0.4) 100%), url('https://www.ghanalive.tv/wp-content/uploads/2017/05/1-1.jpg');
  background-repeat: no-repeat;
  background-size: cover;
  background-position: center center;
  background-attachment: fixed;
+}
+.email{
+    text-align: center;
+    font-size: 20px;
+    margin-top: 0;
+    font-weight: bolder;
 }
