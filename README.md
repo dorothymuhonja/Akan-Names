@@ -9,7 +9,7 @@
 * Chrome web browser
 
 ### How To Run
-* Click on this [https://github.com/dorothymuhonja/Akan-Names.git](Link) to access my git hub Akan-Names repositpory.
+* Click on this [Link](https://github.com/dorothymuhonja/Akan-Names.git) to access my git hub Akan-Names repositpory.
 * Fork or Clone the repository
 * You can also access the web application directly using this live link.
 
