@@ -69,41 +69,34 @@
                                             <i class="fas fa-user white-text"></i> Learn your Akan name</h3>
                                         <hr class="hr-light">
                                     </div>
-                                    <div class="forms">
+                                    <form name="myForm" class="form" onsubmit="return getAkanName();">
                                         <p>Fill the form below to know your Akan name.</p>
-                                        <div id="gender">
+                                        
                                             <h5>Gender</h5>
                                             <!-- Group of default radios - option 1 -->
-                                            <div class="custom-control custom-radio">
-                                                <input type="radio" class="custom-control-input" id="defaultGroupExample1"
-                                                    name="groupOfDefaultRadios">
-                                                <label class="custom-control-label" for="defaultGroupExample1">Male</label>
-                                            </div>
-            
-                                            <!-- Group of default radios - option 2 -->
-                                            <div class="custom-control custom-radio">
-                                                <input type="radio" class="custom-control-input" id="defaultGroupExample2"
-                                                    name="groupOfDefaultRadios" checked>
-                                                <label class="custom-control-label" for="defaultGroupExample2">Female</label>
-                                            </div>
-                                        </div>
+                                        <input type="radio" id="male" name="gender" value="male">
+                                        <label for="male">Male</label>
+                                        <br>
+                                        <input type="radio" id="female" name="gender" value="female">
+                                        <label for="female">Female</label>
+                                          <br>
+                                        
                                         <label for="date">dd</label>
-                                        <input type="number" id="date" name="date" min="01" max="31">
+                                        <input type="number" id="date" name="date" placeholder="01" min="01" max="31">
                                         <label for="month">mm</label>
-                                        <input type="number" id="month" name="month" min="01" max="12">
+                                        <input type="number" id="month" name="month" placeholder="01" min="01" max="12">
                                         <label for="year">yyyy</label>
-                                        <input type="number" id="year" name="year" min="1900" max="2020">
+                                        <input type="number" id="year" name="year" placeholder="1900" min="1900" max="2020">
                                         <br>
                                         <br>
-                                        <button type="button" class="btn btn-primary">Submit</button>
-                                        <button type="button" class="btn btn-danger">Clear</button>
-            
-                                        <p>Your Akan name is:</p>
+                                        <button type="submit" class="btn btn-primary">Submit</button>
+                                        <button type="submit" class="btn btn-danger" onsubmit="return clearInput();">Clear</button>
+                                        <p id="show"></p>
                                     </div>
                                     <hr class="hr-light mb-3 mt-4">
                                     <div class="inline-ul text-center">
                                 
-                                       
+                                    </form>
                                         
                                     </div>
                                 </div>
