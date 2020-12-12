@@ -11,10 +11,10 @@
 ### How To Run
 * Click on this [Link](https://github.com/dorothymuhonja/Akan-Names.git) to access my git hub Akan-Names repositpory.
 * Fork or Clone the repository
-* You can also access the web application directly using this live link.
+* You can also access the web application directly using this [live link]().
 
 ## BDD(Behavior Driven Development)
-* User is required to  select their gender and input their birth date(01-31), month (01-12) and year(1900-2020) which is then converted to the day they were born and outputs their Akan name.
+* User is required to  select their gender (male or female) and input their birth date(01-31), month (01-12) and year(1900-2020) which is then converted to the day they were born and outputs their Akan name.
 * When a user inputs the wrong details they get an error message
 
 ## Technologies used
@@ -22,6 +22,9 @@
 * css- for styling 
 * Javascript- for functionality
 * Bootstrap- for styling 
+
+## Known Bugs
+An input of year 1901- 1903 and 2000 and beyond returns undefined
 
 ## Contact information
 * Email: dorothymuhonja7@gmail.com

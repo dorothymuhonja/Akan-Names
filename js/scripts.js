@@ -42,13 +42,20 @@ function getAkanName () {
       return true;
     }
   }
+function yearValidator () {
 
+    if (yearOfBirth < 1900 || yearOfBirth > 2030 ) {
+        return false;
+    } else {
+        return true;
+    }
+}
+  let yearValid = yearValidator();
   let monthValid = monthValidator();
   let dayValid = dayValidator();
 
-  let dayOfWeekNumber = Math.floor((((Number(yearOfBirth.slice(0,2))/4)-2*Number(yearOfBirth.slice(0,2))-1)+
-          ((5*Number(yearOfBirth.slice(2,4))/4))+((26*(monthOfBirth+1)/10))+dayOfBirth)%7);
-
+  let dayOfWeekNumber = ((century / 4) - 2 * year - 1) + ((5 * year / 4)) + ((26 * (month + 1) / 10)) + date) % 7;
+    var dayOfWeekNumber = Math.floor(dayOfBirth);
   let daysOfWeek = [
     "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"
   ];
@@ -82,3 +89,64 @@ function getAkanName () {
     alert("You've entered an invalid date, month or year or have not selected a gender, please try again.");
   }
 }
+
+// function akanName(date, month, yearOfBirth) {
+
+//     var century = yearOfBirth.slice(0, 2);
+//     var year = yearOfBirth.slice(2, 4);
+
+//     var genders = document.getElementById("gender");
+//     var gender = genders.options[genders.selectedIndex].text;
+
+//     var maleName = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
+//     var femaleName = ["Akosu", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Amna"];
+//     var dayOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Sunday"];
+
+//     var dayOfBirth = (((century / 4) - 2 * year - 1) + ((5 * year / 4)) + ((26 * (month + 1) / 10)) + date) % 7;
+//     var dayOfBirth = Math.floor(dayOfBirth);
+
+//     if (gender === "Male") {
+//         document.getElementById("result").innerHTML = "You were born on a " + dayOfWeek[dayOfBirth - 1] + " and your Akan name is " + maleName[dayOfBirth - 1];
+//          document.getElementById('date').value = '';
+//          document.getElementById('month').value ='';
+//          document.getElementById('year').value ='';
+//         return false;
+//     }
+//     else if (gender === "Female") {
+//         document.getElementById("result").innerHTML = "You were born on a " + dayOfWeek[dayOfBirth - 1] + " and your Akan name is " + femaleName[dayOfBirth - 1];
+//         document.getElementById('date').value = '';
+//          document.getElementById('month').value ='';
+//          document.getElementById('year').value ='';
+//         return false;
+//     }
+
+// }
+
+// function verify() {
+//     var date = document.getElementById('date').value;
+//     var month = document.getElementById('month').value;
+//     var yearOfBirth = document.getElementById('year').value;
+//     var newDate= new Date();
+
+
+//     if (date === "" || date < 1 || date > 31) {
+//         alert("Date must be between 1 and 31");
+//         return;
+//     }
+//     else if (month === "" || month < 1 || month > 12) {
+//         alert("Month must be between 1 and 12");
+//         return;
+//     }
+//     else if (yearOfBirth === "" || yearOfBirth.length < 4 || yearOfBirth > newDate.getFullYear()) {
+//         alert("Please enter the correct year!!");
+//         return;
+//     }
+//     else if(date === "" || month === "" || yearOfBirth === ""){
+//         alert("All fields are required!");
+//         return false;
+//     }else{
+//         generateName(date,month,yearOfBirth);
+//         return false;
+//     }
+// }
+

@@ -43,13 +43,15 @@ header,
 }
 
 .card {
-  background-color: rgba(235, 230, 230, 0.2);
+  background-color: rgba(235, 230, 230, 0.5);
   border: 1px solid rgba(235, 230, 230, 0.2);
   color: black;
+  font-size: 20px;
   text-align: center;
-  margin-top: 5rem;
+  margin-top: 1rem;
   margin-left: 70%;
   width: 400%;
+  font-size: 25px;
 
 }
 
@@ -64,17 +66,29 @@ h6 {
     margin-top: 10rem;
     text-align: center;
 }
-#btn{
-    margin-left: 40%;
+.btn{
+    
+    font-size: 20px;
+    border-radius: 15px;
+    background-color: rgb(26, 26, 107);
+    color: white;
+}
+.btn:hover{
+  background-color: darkcyan;
 }
 
 body{
  
- background-image:linear-gradient( rgba(0, 0, 0, 0.7), rgba(72, 15, 144, 0.4) 100%), url('https://www.ghanalive.tv/wp-content/uploads/2017/05/1-1.jpg');
+ background-image:linear-gradient( rgba(0, 0, 0, 0.5), rgba(72, 15, 144, 0.4) 100%), url('https://www.ghanalive.tv/wp-content/uploads/2017/05/1-1.jpg');
  background-repeat: no-repeat;
  background-size: cover;
  background-position: center center;
  background-attachment: fixed;
+ font-family: 'Dekko';
+
+}
+h3{
+  font-size: 40px;
 }
 .email{
     text-align: center;
@@ -84,4 +98,16 @@ body{
 }
 .page-footer{
     background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(72, 15, 144, 0.4) 100%);
+}
+.navbar{
+  position: relative;
+}
+.navbar .nav-link{
+  font-size: 20px;
+}
+.navbar-brand{
+  font-family: 'Akronim';
+  font-size: 30px;
+  margin-right: 20%;
+  
 }

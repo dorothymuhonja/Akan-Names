@@ -12,6 +12,9 @@
     <!-- Material Design Bootstrap -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/names.css">
+    <link href='https://fonts.googleapis.com/css?family=Akronim' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Dekko' rel='stylesheet'>
+
     <title>Name Checker</title>
 </head>
 <body>
@@ -20,7 +23,7 @@
             <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
                 <div class="container">
                     <a class="navbar-brand" href="#">
-                        <strong>AKAN</strong>
+                        <strong>AKAN NAMES</strong>
                     </a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-7"
                         aria-controls="navbarSupportedContent-7" aria-expanded="false" aria-label="Toggle navigation">
@@ -47,8 +50,6 @@
                 </div>
             </nav>
             <!-- Navbar -->
-    
-            <!-- Mask & flexbox options-->
             
                 <!-- Content -->
                 <div class="container">
@@ -69,16 +70,18 @@
                                             <i class="fas fa-user white-text"></i> Learn your Akan name</h3>
                                         <hr class="hr-light">
                                     </div>
-                                    <form name="myForm" class="form" onsubmit="return getAkanName();">
+                                    <form name="myForm" class="form">
                                         <p>Fill the form below to know your Akan name.</p>
                                         
                                             <h5>Gender</h5>
                                             <!-- Group of default radios - option 1 -->
+                                        <div id="gender">
                                         <input type="radio" id="male" name="gender" value="male">
                                         <label for="male">Male</label>
                                         <br>
                                         <input type="radio" id="female" name="gender" value="female">
                                         <label for="female">Female</label>
+                                        </div>
                                           <br>
                                         
                                         <label for="date">dd</label>
@@ -89,8 +92,8 @@
                                         <input type="number" id="year" name="year" placeholder="1900" min="1900" max="2020">
                                         <br>
                                         <br>
-                                        <button type="submit" class="btn btn-primary">Submit</button>
-                                        <button type="submit" class="btn btn-danger" onsubmit="return clearInput();">Clear</button>
+                                        <button type="submit" class="btn " id="submit" onclick= "">Submit</button>
+                                        <button type="submit" class="btn " onsubmit="return clearInput();">Clear</button>
                                         <p id="show"></p>
                                     </div>
                                     <hr class="hr-light mb-3 mt-4">

@@ -61,7 +61,7 @@ h6 {
     text-align: center;
 }
 .btn{
-    margin-left: 40%;
+    margin-left: 35%;
     background-color: royalblue;
     border: 3px solid white;
     border-radius: 8px;
@@ -85,14 +85,43 @@ h6 {
 }
 .container1{
   margin-left: 30%;
+  
+ 
    
 }
 .container1 h1, h6{
   line-height: 35px;
+  margin-top: 5px;
+}
+body{
+  background-image: linear-gradient( rgba(0, 0, 0, 0.6), rgba(72, 15, 144, 0.5)), url('https://buzzghana.com/wp-content/uploads/2013/10/Akan-people.jpg'); 
+  background-repeat: no-repeat; 
+  background-size: cover; 
+  background-position: center center;
+  background-attachment: fixed;
+  font-family: 'Dekko';
+  
+
+ 
 }
 .container1 h6{
-  font-size: 18px;
+  font-size: 20px;
   text-align: center;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-weight: 400;
+  font-weight: 500;
+  color: white;
+  font-weight: 600;
+  word-spacing: 10px;
+}
+.navbar{
+  position: relative;
+  margin: 0;
+  
+}
+.navbar .nav-link{
+  font-size: 20px;
+}
+.navbar-brand{
+  font-family: 'Akronim';
+  font-size: 30px;
+  margin-right: 20%;
 }
