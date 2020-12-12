@@ -14,7 +14,9 @@
 * You can also access the web application directly using this [live link]().
 
 ## BDD(Behavior Driven Development)
-* User is required to  select their gender (male or female) and input their birth date(01-31), month (01-12) and year(1900-2020) which is then converted to the day they were born and outputs their Akan name.
+* User is required to  select their gender (male or female) and input their birth date(01-31), month (01-12) and year(1900-2020) 
+* Users birthday is converted to the day they were born
+* The application gives the user their Akan name depending on the day they were born
 * When a user inputs the wrong details they get an error message
 
 ## Technologies used
