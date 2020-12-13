@@ -1,4 +1,4 @@
-function akanName(date, month, yearOfBirth) {
+function generateName(date, month, yearOfBirth) {
 
     var century = yearOfBirth.slice(0, 2);
     var year = yearOfBirth.slice(2, 4);
@@ -14,14 +14,14 @@ function akanName(date, month, yearOfBirth) {
     var dayOfBirth = Math.floor(dayOfBirth);
 
     if (gender === "Male") {
-        document.getElementById("result").innerHTML = "You were born on a " + dayOfWeek[dayOfBirth - 1] + " and your Akan name is " + maleName[dayOfBirth - 1];
+         document.getElementById('result').innerHTML = "You were born on a " + dayOfWeek[dayOfBirth - 1] + " and your name is " + maleName[dayOfBirth - 1];
          document.getElementById('date').value = '';
          document.getElementById('month').value ='';
          document.getElementById('year').value ='';
         return false;
     }
     else if (gender === "Female") {
-        document.getElementById("result").innerHTML = "You were born on a " + dayOfWeek[dayOfBirth - 1] + " and your Akan name is " + femaleName[dayOfBirth - 1];
+        document.getElementById('result').innerHTML = "You were born on a " + dayOfWeek[dayOfBirth - 1] + " and your name is " + femaleName[dayOfBirth - 1];
         document.getElementById('date').value = '';
          document.getElementById('month').value ='';
          document.getElementById('year').value ='';
@@ -31,30 +31,29 @@ function akanName(date, month, yearOfBirth) {
 }
 
 function verify() {
-    var date = document.getElementById('date').value;
-    var month = document.getElementById('month').value;
-    var yearOfBirth = document.getElementById('year').value;
-    var newDate= new Date();
+  var date = document.getElementById('date').value;
+  var month = document.getElementById('month').value;
+  var yearOfBirth = document.getElementById('year').value;
+  var newDate = new Date();
 
-
-    if (date === "" || date < 1 || date > 31) {
-        alert("Date must be between 1 and 31");
-        return;
-    }
-    else if (month === "" || month < 1 || month > 12) {
-        alert("Month must be between 1 and 12");
-        return;
-    }
-    else if (yearOfBirth === "" || yearOfBirth.length < 4 || yearOfBirth > newDate.getFullYear()) {
-        alert("Please enter the correct year!!");
-        return;
-    }
-    else if(date === "" || month === "" || yearOfBirth === ""){
-        alert("All fields are required!");
-        return false;
-    }else{
-        generateName(date,month,yearOfBirth);
-        return false;
-    }
+  if (date === '' || date < 1 || date > 31) {
+    alert('Date must be between 1 and 31');
+    return;
+  } else if (month === '' || month < 1 || month > 12) {
+    alert('Month must be between 1 and 12');
+    return;
+  } else if (
+    yearOfBirth === '' ||
+    yearOfBirth.length < 4 ||
+    yearOfBirth > newDate.getFullYear()
+  ) {
+    alert('Enter a valid year of birth!!');
+    return;
+  } else if (date === '' || month === '' || yearOfBirth === '') {
+    alert('All fields are required.....!');
+    return false;
+  } else {
+    generateName(date, month, yearOfBirth);
+    return false;
+  }
 }
-
