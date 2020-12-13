@@ -40,14 +40,14 @@ function generateName(date, month, yearOfBirth) {
     var dayOfBirth = Math.floor(dayOfBirth);
 
     if (gender === "Male") {
-         document.getElementById('show').innerHTML = "You were born on a " + dayOfWeek[dayOfBirth] + " and your name is " + maleName[dayOfBirth];
+         document.getElementById('show').innerHTML = "You were born on a " + dayOfWeek[dayOfBirth] + " and your Akan name is " + maleName[dayOfBirth] + ".";
          document.getElementById('date').value = '';
          document.getElementById('month').value ='';
          document.getElementById('year').value ='';
         return false;
     }
     else if (gender === "Female") {
-        document.getElementById('show').innerHTML = "You were born on a " + dayOfWeek[dayOfBirth] + " and your name is " + femaleName[dayOfBirth];
+        document.getElementById('show').innerHTML = "You were born on a " + dayOfWeek[dayOfBirth] + " and your Akan name is " + femaleName[dayOfBirth] + ".";
         document.getElementById('date').value = '';
          document.getElementById('month').value ='';
          document.getElementById('year').value ='';
@@ -63,17 +63,17 @@ function verify() {
   var newDate = new Date();
 
   if (date === '' || date < 1 || date > 31) {
-    alert('Date must be between 1 and 31');
+    alert('Enter a valid date 1 and 31');
     return;
   } else if (month === '' || month < 1 || month > 12) {
-    alert('Month must be between 1 and 12');
+    alert('Enter a valid month 1 and 12');
     return;
   } else if (
     yearOfBirth === '' ||
     yearOfBirth.length < 4 ||
     yearOfBirth > newDate.getFullYear()
   ) {
-    alert('Enter a valid year of birth!!');
+    alert('Enter a valid year!!');
     return;
   } else if (date === '' || month === '' || yearOfBirth === '') {
     alert('All fields are required.....!');
