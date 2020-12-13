@@ -114,3 +114,14 @@ h5{
   margin-right: 20%;
   
 }
+@media (min-width: 800px) and (max-width: 850px){
+  .card{
+    margin-left: 10%;
+  }
+}
+@media (max-width: 740px){
+  .card{
+    margin: 10px;
+    width: 400px;
+  }
+}

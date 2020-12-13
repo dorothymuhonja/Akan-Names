@@ -87,7 +87,6 @@ h6 {
 .container1{
   margin-left: 30%;
   
- 
    
 }
 .container1 h1, h6{
@@ -125,4 +124,18 @@ body{
   font-family: 'Akronim';
   font-size: 30px;
   margin-right: 20%;
+}
+@media (min-width: 800px) and (max-width: 850px){
+  .container1{
+    margin-left: 50%;
+  }
+}
+@media (max-width: 740px){
+  .container1{
+    margin: 10px;
+    width: 400px;
+  }
+  .btn{
+    margin-left: 10%;
+  }
 }
