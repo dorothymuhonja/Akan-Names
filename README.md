@@ -26,7 +26,8 @@
 * Bootstrap
  
  ## Page Screenshot
- 
+ ![Landing Page](images/landing.png)
+![Name Checker](images/names.png)
 
 ## Contact information
 * Email: dorothymuhonja7@gmail.com
