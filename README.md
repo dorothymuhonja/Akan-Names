@@ -11,7 +11,7 @@
 ### How To Run
 * Click on this [Link](https://github.com/dorothymuhonja/Akan-Names.git) to access my git hub Akan-Names repositpory.
 * Fork or Clone the repository
-* You can also access the web application directly using this [live link]().
+* You can also access the web application directly using this [live link](https://dorothymuhonja.github.io/Akan-Names/).
 
 ## BDD(Behavior Driven Development)
 * User is required to  select their gender (male or female) and input their birth date(01-31), month (01-12) and year(1900-2020) 
