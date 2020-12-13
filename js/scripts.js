@@ -14,14 +14,14 @@ function generateName(date, month, yearOfBirth) {
     var dayOfBirth = Math.floor(dayOfBirth);
 
     if (gender === "Male") {
-         document.getElementById('result').innerHTML = "You were born on a " + dayOfWeek[dayOfBirth - 1] + " and your name is " + maleName[dayOfBirth - 1];
+         document.getElementById('result').innerHTML = "You were born on a " + dayOfWeek[dayOfBirth] + " and your name is " + maleName[dayOfBirth];
          document.getElementById('date').value = '';
          document.getElementById('month').value ='';
          document.getElementById('year').value ='';
         return false;
     }
     else if (gender === "Female") {
-        document.getElementById('result').innerHTML = "You were born on a " + dayOfWeek[dayOfBirth - 1] + " and your name is " + femaleName[dayOfBirth - 1];
+        document.getElementById('result').innerHTML = "You were born on a " + dayOfWeek[dayOfBirth] + " and your name is " + femaleName[dayOfBirth];
         document.getElementById('date').value = '';
          document.getElementById('month').value ='';
          document.getElementById('year').value ='';

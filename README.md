@@ -20,13 +20,13 @@
 * When a user inputs the wrong details they get an error message
 
 ## Technologies used
-* html- for web outline
-* css- for styling 
-* Javascript- for functionality
-* Bootstrap- for styling 
-
-## Known Bugs
-An input of year 1901- 1903 and 2000 and beyond returns undefined
+* html
+* css
+* Javascript
+* Bootstrap
+ 
+ ## Page Screenshot
+ 
 
 ## Contact information
 * Email: dorothymuhonja7@gmail.com
